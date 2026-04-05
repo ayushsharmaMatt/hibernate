@@ -2,7 +2,7 @@ package com.kodnest.hibernate;
 
 import java.util.Objects;
 
-//POJO
+//POJO class priyanshu sinha
 
 public class address {
   
