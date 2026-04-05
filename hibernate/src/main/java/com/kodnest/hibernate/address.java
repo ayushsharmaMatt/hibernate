@@ -7,7 +7,7 @@ import java.util.Objects;
 public class address {
   
 	int id;
-	int  houseno;
+	int  houseNo;
 	String streetname;
 	String city;
 	String state;
@@ -20,7 +20,7 @@ public class address {
 	public address(int id, int houseno, String streetname, String city, String state, String country, int pincode) {
 		super();
 		this.id = id;
-		this.houseno = houseno;
+		this.houseNo = houseno;
 		this.streetname = streetname;
 		this.city = city;
 		this.state = state;
@@ -34,10 +34,10 @@ public class address {
 		this.id = id;
 	}
 	public int getHouseno() {
-		return houseno;
+		return houseNo;
 	}
 	public void setHouseno(int houseno) {
-		this.houseno = houseno;
+		this.houseNo = houseno;
 	}
 	public String getStreetname() {
 		return streetname;
@@ -59,7 +59,7 @@ public class address {
 	}
 	@Override
 	public String toString() {
-		return "address [id=" + id + ", houseno=" + houseno + ", streetname=" + streetname + ", city=" + city
+		return "address [id=" + id + ", houseno=" + houseNo + ", streetname=" + streetname + ", city=" + city
 				+ ", state=" + state + ", country=" + country + ", pincode=" + pincode + "]";
 	}
 	public String getCountry() {
@@ -76,7 +76,7 @@ public class address {
 	}
 	@Override
 	public int hashCode() {
-		return Objects.hash(city, country, houseno, id, pincode, state, streetname);
+		return Objects.hash(city, country, houseNo, id, pincode, state, streetname);
 	}
 	@Override
 	public boolean equals(Object obj) {
@@ -87,7 +87,7 @@ public class address {
 		if (getClass() != obj.getClass())
 			return false;
 		address other = (address) obj;
-		return Objects.equals(city, other.city) && Objects.equals(country, other.country) && houseno == other.houseno
+		return Objects.equals(city, other.city) && Objects.equals(country, other.country) && houseNo == other.houseNo
 				&& id == other.id && pincode == other.pincode && Objects.equals(state, other.state)
 				&& Objects.equals(streetname, other.streetname);
 	}
