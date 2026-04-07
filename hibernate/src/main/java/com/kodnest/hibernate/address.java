@@ -3,7 +3,7 @@ package com.kodnest.hibernate;
 import java.util.Objects;
 
 //POJO class priyanshu sinha
-
+////////////
 public class address {
   
 	int id;
